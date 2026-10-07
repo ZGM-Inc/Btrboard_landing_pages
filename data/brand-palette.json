@@ -1,0 +1,17 @@
+{
+  "source": "https://www.figma.com/design/mo70UFTT7yIX1BCvZsTOYu/BrtBoard-Hero?node-id=1-15",
+  "verifiedFrom": "Printed HEX labels in the Figma brand palette",
+  "primary": {
+    "BTRBlue": "#0082BE",
+    "BTRGreen": "#8DC63F"
+  },
+  "secondary": {
+    "BTRNavy": "#07456B",
+    "BTRForest": "#17643A",
+    "BTRGrey": "#DAE1D7",
+    "BTRCharcoal": "#4D4D4F"
+  },
+  "accent": {
+    "BTRGlow": "#FFE63E"
+  }
+}

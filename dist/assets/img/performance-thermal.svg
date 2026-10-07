@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="300" viewBox="0 0 640 300" fill="none" role="img" aria-labelledby="thermal-title thermal-desc">
+  <title id="thermal-title">Heat moderated by a layered wall</title>
+  <desc id="thermal-desc">A qualitative architectural section. Warm yellow lines soften as they reach the layered wall, with a calm blue-grey space beyond it.</desc>
+  <defs>
+    <linearGradient id="thermal-heat" x1="99" y1="0" x2="285" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFE63E" stop-opacity="0"/>
+      <stop offset=".24" stop-color="#E8CD29" stop-opacity=".9"/>
+      <stop offset=".72" stop-color="#E8CD29" stop-opacity=".75"/>
+      <stop offset="1" stop-color="#E8CD29" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="thermal-face" x1="320" y1="147" x2="380" y2="148" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#DDDCD3"/>
+      <stop offset="1" stop-color="#E9E8E1"/>
+    </linearGradient>
+    <linearGradient id="thermal-cool" x1="388" y1="0" x2="504" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#81989D" stop-opacity=".5"/>
+      <stop offset="1" stop-color="#81989D" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="thermal-ground">
+      <stop stop-color="#272820" stop-opacity=".13"/>
+      <stop offset="1" stop-color="#272820" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="thermal-fibre" width="13" height="19" patternUnits="userSpaceOnUse">
+      <path d="m2 3 2 4m5 4 1 5m-7 0 1 2" stroke="#22251F" stroke-opacity=".16" stroke-width=".8"/>
+      <path d="m8 2 2 2M2 12l1 1" stroke="#F7F5EA" stroke-opacity=".55" stroke-width=".8"/>
+    </pattern>
+    <pattern id="thermal-grain" width="17" height="21" patternUnits="userSpaceOnUse">
+      <circle cx="3" cy="5" r=".65" fill="#696B61" fill-opacity=".16"/>
+      <circle cx="12" cy="15" r=".5" fill="#696B61" fill-opacity=".12"/>
+    </pattern>
+  </defs>
+
+  <!-- An architectural section, deliberately without a simulated scale. -->
+  <ellipse cx="343" cy="250" rx="110" ry="13" fill="url(#thermal-ground)"/>
+  <path d="M90 251H264m133 0h153" stroke="#34382D" stroke-opacity=".11"/>
+
+  <g class="performance__heat-flow" stroke="url(#thermal-heat)" stroke-linecap="round">
+    <path d="M104 98C156 98 201 107 278 112" stroke-width="2.6"/>
+    <path d="M103 125C164 125 217 134 281 139" stroke-width="3"/>
+    <path d="M102 153C159 153 224 160 282 165" stroke-width="3.2"/>
+    <path d="M104 183C163 183 216 186 282 189" stroke-width="3"/>
+    <path d="M111 212C166 212 220 212 282 214" stroke-width="2.6"/>
+  </g>
+
+  <!-- Layers continue across the top so the section reads as a material. -->
+  <path d="m282 73 7 3v165l-7-3Z" fill="#252820"/>
+  <path d="m289 76 19 8v165l-19-8Z" fill="#B2B19C"/>
+  <path d="m289 76 19 8v165l-19-8Z" fill="url(#thermal-fibre)"/>
+  <path d="m308 84 7 3v165l-7-3Z" fill="#F1E59A"/>
+  <path d="m315 87 6 2v165l-6-2Z" fill="#72776A"/>
+  <path d="m321 89 60-26v165l-60 26Z" fill="url(#thermal-face)"/>
+  <path d="m321 89 60-26v165l-60 26Z" fill="url(#thermal-grain)"/>
+
+  <path d="m282 73 60-26 7 3-60 26Z" fill="#54574B"/>
+  <path d="m289 76 60-26 19 8-60 26Z" fill="#CCCBBA"/>
+  <path d="m289 76 60-26 19 8-60 26Z" fill="url(#thermal-fibre)"/>
+  <path d="m308 84 60-26 7 3-60 26Z" fill="#FFE63E"/>
+  <path d="m315 87 60-26 6 2-60 26Z" fill="#929787"/>
+  <path d="m321 89 60-26v165l-60 26" stroke="#363C30" stroke-opacity=".12" stroke-width=".8"/>
+  <path d="M321 89v165" stroke="#FFFDF4" stroke-opacity=".55" stroke-width=".8"/>
+
+  <g stroke="url(#thermal-cool)" stroke-width="1.2" stroke-linecap="round">
+    <path d="M399 107h87"/>
+    <path d="M399 148h104"/>
+    <path d="M399 189h87"/>
+  </g>
+</svg>

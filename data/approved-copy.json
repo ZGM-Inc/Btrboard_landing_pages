@@ -1,0 +1,63 @@
+{
+  "project": "BTRboard Awareness Campaign, Landing Page Copy",
+  "docket": "BTR-3731",
+  "date": "2026-10-01",
+  "version": "Custom Landing Page v1",
+  "source": "Approved campaign copy supplied by the user in this conversation.",
+  "header": "{First Name},\nIntroducing a better way to build in {Province}",
+  "education": {
+    "heading": "A better approach to wall assembly",
+    "body": "BTRboard (Better Thermal Resistance) is an insulated wall sheathing product that combines OSB, fire-resistant OSB, or Type X exterior gypsum sheathing with a low-absorption thermoset foam core. By eliminating extra layers and simplifying installation, we help streamline construction while reducing material usage and labour costs for your team.",
+    "statement": "BTRboard works harder, so you can build smarter. We help you simplify the wall assembly while improving the performance of every {Company Name} home.",
+    "performance_heading": "Even better reasons to believe",
+    "benefits": [
+      {
+        "heading": "BTRboard Resistance",
+        "body": "Increases a wall systems R-Value by up to 8.75."
+      },
+      {
+        "heading": "BTRboard Health",
+        "body": "Keeps walls warm and dry to reduce condensation and mould growth."
+      },
+      {
+        "heading": "BTRboard Insulation",
+        "body": "Enhances comfort by minimizing heat loss for a more consistent indoor temperature."
+      },
+      {
+        "heading": "BTRboard Soundproofing",
+        "body": "Reduces outside noise by 26%."
+      },
+      {
+        "heading": "BTRboard Airflow",
+        "body": "Eliminates air gaps and leaks."
+      },
+      {
+        "heading": "BTRboard Energy",
+        "body": "Reduces a home’s carbon footprint through lower energy use."
+      }
+    ]
+  },
+  "jayman_video": {
+    "heading": "Built by builders. Trusted by builders.",
+    "body": "Don’t just take our word for it. Hear from Jay Westman, 28-time Alberta Builder of the Year, on how BTRboard is helping shape the future of homebuilding.",
+    "testimonial": {
+      "quote": "it’s just a better damn house with BTRboard",
+      "name": "Jay Westman",
+      "company": "Jayman BUILT",
+      "source": "Supplied by the user on 2026-10-07 for the primary page’s proof section."
+    },
+    "asset_status": "Video has not been filmed yet."
+  },
+  "calendar": {
+    "heading": "Ready to build better?",
+    "body": "Let's discuss how BTRboard can work for {Company Name}.",
+    "integration_status": "Calendar integration pending."
+  },
+  "subsequent_user_direction": [
+    "Replace the noise selling point with material and labour cost savings. Carry this forward when reconciling the v1 copy.",
+    "Do not use em dashes in visitor-facing copy.",
+    "Keep the approved Jayman introduction exactly, including the 28-time Alberta Builder of the Year wording, after the factual attribution question was raised.",
+    "Restore the approved noise-reduction benefit alongside cost savings. Show all seven performance benefits with equal emphasis and icons, with a slightly darker background overlay.",
+    "Change all presentation CTA labels to Let’s chat on both landing pages."
+  ]
+}

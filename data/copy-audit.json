@@ -1,0 +1,45 @@
+{
+  "date": "2026-10-07",
+  "scope": [
+    "template.html",
+    "template-b.html"
+  ],
+  "master": "data/approved-copy.json",
+  "sources": {
+    "products": "https://www.btrboard.com/products/",
+    "benefits": "https://www.btrboard.com/why-btrboard/",
+    "about": "https://www.btrboard.com/about-btr/",
+    "installation": "https://www.btrboard.com/installation-guide/",
+    "jayman_awards": "https://www.jayman.com/why-jayman/awards-and-recognition/",
+    "contact": "https://www.btrboard.com/contact-us/"
+  },
+  "reconciled": [
+    "Restored headline capitalization and first-name line break.",
+    "Preserved the exact approved product heading and paragraph.",
+    "Restored the missing personalized education sentence.",
+    "Restored the approved performance heading, feature names and descriptions.",
+    "Kept material and labour cost savings in the product summary; restored approved soundproofing copy alongside savings in the seven-benefit performance section.",
+    "Restored the exact approved Jayman introduction, as explicitly requested after fact-check discussion.",
+    "Preserved the approved booking heading and supporting copy.",
+    "Removed additional draft hero supporting copy and performance introduction absent from the approved master.",
+    "Kept existing functional labels, buttons, factual footer and interactive product notes.",
+    "Corrected the possessive in wall system’s R-value.",
+    "Confirmed no em dashes in visitor-facing copy."
+  ],
+  "supplementary_corrections": [
+    "Removed the unsupported implication that the facer replaces a weather barrier; used documented shear-strength and foam-shrinkage benefits.",
+    "Clarified that foam thickness depends on the selected product.",
+    "Replaced substrate product-line names with actual substrate materials.",
+    "Replaced generic structural sheathing in metadata with wall sheathing.",
+    "Updated the booking CTA to the current canonical contact URL; the former URL redirects there."
+  ],
+  "qualifications": [
+    "The approved Jayman introduction attributes the 28-time award to Jay Westman. Jayman’s official awards page attributes 28 Builder of the Year wins in Alberta to Jayman BUILT across regional and provincial organizations. User explicitly chose to retain approved wording; this is not recorded as an independently verified personal award.",
+    "R-8.75 is the maximum for OSB and RESIST. FIRE-X is rated up to R-7.43. The campaign’s existing up-to wording is retained.",
+    "The approved airflow statement is general campaign wording; airtightness depends on assembly and installation. No universal field-performance guarantee was independently established.",
+    "Savings copy contains no invented project-specific percentage or dollar value.",
+    "Jay’s testimonial has not been filmed; both play controls remain disabled and say Video coming soon.",
+    "Calendar integration is pending. The CTA currently opens BTRboard’s contact form.",
+    "The CSV contains one sample builder record; personalized contact details have not been independently verified."
+  ]
+}

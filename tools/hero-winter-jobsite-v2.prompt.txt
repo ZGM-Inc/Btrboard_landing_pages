@@ -1,0 +1,13 @@
+Mode: built-in image_gen image edit.
+Edit target: assets/img/gen-snow-sunset.png
+Output: assets/img/hero-winter-jobsite-v2.png
+
+Use case: compositing
+Asset type: edited photographic background for a BTRboard account-based marketing landing-page hero, shared across 40 personalized pages for Canadian homebuilders.
+Input image 1 is the EDIT TARGET: the existing snowy two-storey house with exposed BTRboard sheathing.
+Primary request: revise this existing image into a more believable, understated winter construction photograph, and recompose it for a left-aligned white headline. This is a quick creative iteration, not a glossy architectural advertisement.
+Keep the recognizable two-storey house, gabled roof architecture, white-faced sheathing with small dark-blue BTRboard markings, winter season, and three-quarter view. Preserve the essential building design and construction stage.
+Composition: landscape 16:9, ideally 2304x1296 or larger. Move the main house into the RIGHT 60% of the frame, with its visual center around 72% of image width. Keep the entire roof and primary facade in frame. The LEFT 40% should be quiet, naturally darker open jobsite foreground and sparse distant trees, with no dominant objects, bright highlights or hard focal points competing with web text. Eye-level architectural documentary photography, natural perspective, no exaggerated wide angle.
+Lighting: subdued late winter afternoon, cool neutral daylight and only a faint warm horizon. Replace the dramatic orange/pink sunset with a restrained partly overcast sky. Keep the building well exposed and legible; do not bake in a black gradient because the website adds that.
+Materials and realism: show flat rigid sheathing panels with subtle straight panel joints and credible corner/window edges. Keep the small blue markings faithful to the reference and make their overall pattern visually quieter; no invented brand identity, no oversized labels, no fake technical diagrams. Modest boot tracks and compressed snow near the entrance and the existing lumber stack, natural uneven snow and slightly weathered materials. Preserve a tidy but believable working construction site. Background evergreens should feel less like a secluded luxury chalet setting.
+Avoid: people, vehicles, extra signage, Jayman or other builder logos, added advertising copy, watermark, fantastical structural details, HDR, oversharpening, dramatic lens effects, teal-orange grading, showroom-perfect surfaces. No webpage text/buttons embedded in the image.

@@ -1,0 +1,12 @@
+Mode: built-in image_gen image edit.
+Source: https://www.btrboard.com/wp-content/uploads/2025/07/btr-facer-1536x866.webp
+Edit target: assets/img/btr-interior-original.webp
+Output: assets/img/hero-interior-sunset.png
+
+Use case: lighting-weather.
+Asset type: opening frame/poster for a subtle luxury architectural hero video for BTRboard's personalized builder campaign.
+Image 1 is the EDIT TARGET, an actual unfinished interior with exposed timber studs, joists, three windows on the left, BTRboard printing visible between the studs, subfloor and an open framed doorway on the right.
+Change ONLY lighting, time of day and restrained photographic colour treatment to late evening shortly before sunset.
+Preserve the exact architecture, camera position, framing, perspective, every stud and joist, all window sizes and positions, all printed BTRboard markings/logos, QR patterns, construction details, loose cables, outdoor trees, ground, and unfinished construction stage. Do not renovate, remove, replace, tidy up, or invent objects.
+Soft low amber sunlight enters naturally through the existing windows and gives the timber warm honey highlights and long softly defined floor shadows. Outside is late-evening sky with a faint peach glow, slightly cooler subdued trees. Interior shadows are rich warm-neutral, not black or orange. Keep the image bright enough to clearly recognize BTRboard and the honest material textures. Premium architectural editorial photography with natural dynamic range, understated and believable; luxurious quality of light within an unfinished home. No harsh spotlight, no dramatic sun disk, no lens flare, no volumetric beams, no HDR, no added furniture or people, no new text.
+Keep the same wide landscape crop and aspect ratio. High fidelity to original geometry and brand markings is the highest priority. This is a still image; no simulated blur or motion.

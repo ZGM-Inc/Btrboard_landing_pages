@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="300" viewBox="0 0 640 300" fill="none" role="img" aria-labelledby="acoustic-title acoustic-desc">
+  <title id="acoustic-title">Less sound carried through</title>
+  <desc id="acoustic-desc">A qualitative architectural section. Broad sound waves approach a layered wall from the left, and smaller, softer waves emerge on the right.</desc>
+  <defs>
+    <linearGradient id="acoustic-face" x1="320" y1="147" x2="380" y2="148" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#DDDCD3"/>
+      <stop offset="1" stop-color="#E9E8E1"/>
+    </linearGradient>
+    <linearGradient id="acoustic-wave" x1="124" y1="150" x2="276" y2="150" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#CDB62D" stop-opacity=".5"/>
+      <stop offset=".56" stop-color="#DBC22A" stop-opacity=".9"/>
+      <stop offset="1" stop-color="#DBC22A" stop-opacity=".45"/>
+    </linearGradient>
+    <radialGradient id="acoustic-ground">
+      <stop stop-color="#272820" stop-opacity=".13"/>
+      <stop offset="1" stop-color="#272820" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="acoustic-fibre" width="13" height="19" patternUnits="userSpaceOnUse">
+      <path d="m2 3 2 4m5 4 1 5m-7 0 1 2" stroke="#22251F" stroke-opacity=".16" stroke-width=".8"/>
+      <path d="m8 2 2 2M2 12l1 1" stroke="#F7F5EA" stroke-opacity=".55" stroke-width=".8"/>
+    </pattern>
+    <pattern id="acoustic-grain" width="17" height="21" patternUnits="userSpaceOnUse">
+      <circle cx="3" cy="5" r=".65" fill="#696B61" fill-opacity=".16"/>
+      <circle cx="12" cy="15" r=".5" fill="#696B61" fill-opacity=".12"/>
+    </pattern>
+  </defs>
+
+  <ellipse cx="343" cy="250" rx="110" ry="13" fill="url(#acoustic-ground)"/>
+  <path d="M90 251H264m133 0h153" stroke="#34382D" stroke-opacity=".11"/>
+
+  <!-- Open arcs convey relative sound only; no measured attenuation is implied. -->
+  <g class="performance__sound-in" stroke="url(#acoustic-wave)" stroke-linecap="round">
+    <path d="M131 107c25 24 25 64 0 88" stroke-width="2"/>
+    <path d="M168 88c36 34 36 92 0 126" stroke-width="2.2"/>
+    <path d="M205 72c47 43 47 115 0 158" stroke-width="2.4"/>
+    <path d="M246 63c24 25 36 55 36 88s-12 63-36 88" stroke-width="2"/>
+  </g>
+
+  <path d="m282 73 7 3v165l-7-3Z" fill="#252820"/>
+  <path d="m289 76 19 8v165l-19-8Z" fill="#B2B19C"/>
+  <path d="m289 76 19 8v165l-19-8Z" fill="url(#acoustic-fibre)"/>
+  <path d="m308 84 7 3v165l-7-3Z" fill="#F1E59A"/>
+  <path d="m315 87 6 2v165l-6-2Z" fill="#72776A"/>
+  <path d="m321 89 60-26v165l-60 26Z" fill="url(#acoustic-face)"/>
+  <path d="m321 89 60-26v165l-60 26Z" fill="url(#acoustic-grain)"/>
+
+  <path d="m282 73 60-26 7 3-60 26Z" fill="#54574B"/>
+  <path d="m289 76 60-26 19 8-60 26Z" fill="#CCCBBA"/>
+  <path d="m289 76 60-26 19 8-60 26Z" fill="url(#acoustic-fibre)"/>
+  <path d="m308 84 60-26 7 3-60 26Z" fill="#FFE63E"/>
+  <path d="m315 87 60-26 6 2-60 26Z" fill="#929787"/>
+  <path d="m321 89 60-26v165l-60 26" stroke="#363C30" stroke-opacity=".12" stroke-width=".8"/>
+  <path d="M321 89v165" stroke="#FFFDF4" stroke-opacity=".55" stroke-width=".8"/>
+
+  <g class="performance__sound-out" stroke="#81989D" stroke-linecap="round" stroke-width="1.2">
+    <path d="M405 128c13 13 13 33 0 46" stroke-opacity=".5"/>
+    <path d="M435 120c17 17 17 45 0 62" stroke-opacity=".32"/>
+    <path d="M466 114c20 20 20 54 0 74" stroke-opacity=".17"/>
+  </g>
+</svg>
