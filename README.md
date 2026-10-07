@@ -24,6 +24,10 @@ For a design review without Python, download the repository ZIP, unzip it, and o
 `dist/riverstone-homes/index.html` in a browser. The `dist` folder is committed so the
 current approved review build travels with the source files.
 
+Pushes to `main` also run `.github/workflows/pages.yml`, rebuild `dist/`, and publish it
+as the GitHub Pages review site. `review-index.html` redirects the Pages root to the
+primary Riverstone Homes page; the alternate remains available at `/riverstone-homes-b/`.
+
 ## Adding builders
 
 Append rows to `data/builders.csv` and rebuild:
