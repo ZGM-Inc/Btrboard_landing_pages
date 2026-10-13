@@ -10,6 +10,38 @@
 
   document.documentElement.classList.add('js-enter');
 
+  // Give the product its own arrival. Text may enter near the viewport edge,
+  // but the board needs enough visible area and a loaded image to be noticed.
+  var board = document.getElementById('explorer');
+  if (board && groups.indexOf(board) !== -1) {
+    groups = groups.filter(function (group) { return group !== board; });
+    var boardImage = board.querySelector('img');
+    var imageReady = !boardImage || boardImage.complete;
+    var boardVisible = false;
+    var boardEntered = false;
+
+    function enterBoard() {
+      if (!imageReady || !boardVisible || boardEntered) return;
+      boardEntered = true;
+      board.classList.add('is-in');
+      boardObserver.disconnect();
+    }
+
+    var boardObserver = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        boardVisible = entry.isIntersecting && entry.intersectionRatio >= 0.35;
+        enterBoard();
+      });
+    }, { rootMargin: '0px 0px -10% 0px', threshold: [0, 0.35] });
+
+    if (!imageReady) {
+      var imageSettled = function () { imageReady = true; enterBoard(); };
+      boardImage.addEventListener('load', imageSettled, { once: true });
+      boardImage.addEventListener('error', imageSettled, { once: true });
+    }
+    boardObserver.observe(board);
+  }
+
   function splitLines(el) {
     if (!el.dataset.original) el.dataset.original = el.innerHTML;
     el.innerHTML = el.dataset.original;
