@@ -4,11 +4,11 @@
   "date": "2026-10-01",
   "version": "Custom Landing Page v1",
   "source": "Approved campaign copy supplied by the user in this conversation.",
-  "header": "{First Name},\nIntroducing a better way to build in {Province}",
+  "header": "{First Name},\nIntroducing a better way to build in {Province}.",
   "education": {
     "heading": "A better approach to wall assembly",
     "body": "BTRboard (Better Thermal Resistance) is an insulated wall sheathing product that combines OSB, fire-resistant OSB, or Type X exterior gypsum sheathing with a low-absorption thermoset foam core. By eliminating extra layers and simplifying installation, we help streamline construction while reducing material usage and labour costs for your team.",
-    "statement": "BTRboard works harder, so you can build smarter. We help you simplify the wall assembly while improving the performance of every {Company Name} home.",
+    "statement": "BTRboard works harder, so {Company Name} can build smarter. We help you simplify the wall assembly while improving the performance of every home.",
     "performance_heading": "Even better reasons to believe",
     "benefits": [
       {
@@ -58,6 +58,7 @@
     "Do not use em dashes in visitor-facing copy.",
     "Keep the approved Jayman introduction exactly, including the 28-time Alberta Builder of the Year wording, after the factual attribution question was raised.",
     "Restore the approved noise-reduction benefit alongside cost savings. Show all seven performance benefits with equal emphasis and icons, with a slightly darker background overlay.",
-    "Change all presentation CTA labels to Let’s chat on both landing pages."
+    "Change all presentation CTA labels to Let’s chat on both landing pages.",
+    "Storytelling-team revisions supplied by the user: add a period after the province in the hero headline; personalise the works-harder sentence with the company name; end the following sentence with every home."
   ]
 }
