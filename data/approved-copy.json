@@ -51,7 +51,8 @@
   "calendar": {
     "heading": "Ready to build better?",
     "body": "Let's discuss how BTRboard can work for {Company Name}.",
-    "integration_status": "Calendar integration pending."
+    "integration_status": "The final Let’s chat CTA links to Colin Steele’s Microsoft Bookings calendar, supplied by the user.",
+    "booking_url": "https://bookings.cloud.microsoft/bookwithme/user/730223532a2f4f28b09e131ca22ee970@btrboard.com/meetingtype/oIwulFF91UCgh49t3h4aTA2?anonymous&ismsaljsauthenabled&ep=mcard"
   },
   "subsequent_user_direction": [
     "Replace the noise selling point with material and labour cost savings. Carry this forward when reconciling the v1 copy.",
