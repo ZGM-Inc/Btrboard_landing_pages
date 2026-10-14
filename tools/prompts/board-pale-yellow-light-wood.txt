@@ -1,0 +1,11 @@
+Mode: Built-in image_gen edit.
+Edit target: assets/img/gen-board-angled-pale-yellow.png
+Saved result: assets/img/gen-board-angled-pale-yellow-light-wood.png
+User request: Lighten the wood as well.
+
+Use case: precise-object-edit.
+Make a localized colour adjustment to this exact BTRboard product image.
+
+Lighten ONLY the bottom OSB wood backing, on both the long left edge and short front edge, to a pale natural blond wood colour. Lift the dark brown tones toward light straw-beige and creamy tan, roughly 15–20% lighter overall. Retain real wood variation, dry cut texture, compressed strands and natural shadows; do not bleach it white or flatten the grain. The short front edge should remain a little shaded but noticeably lighter than before.
+
+Preserve all other pixels and details as closely as possible: the current pale-yellow foam colour, softened fine foam texture, layer thicknesses, muted blue thin facer, all BTRboard logos and lettering and QR-like marks, board shape and framing, camera angle, black background and overall lighting. Do not make the foam more yellow, lighter or rougher. Do not regenerate the wood grain or make rounded glossy chips: this is only a restrained lightening of the existing wood. Same complete panel composition.
