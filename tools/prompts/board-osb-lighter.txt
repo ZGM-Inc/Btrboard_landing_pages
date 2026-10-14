@@ -1,0 +1,17 @@
+Mode: Built-in image_gen edit.
+Edit target: assets/img/gen-board-angled-lighter-foam.png
+Material reference: IMG_1539.jpeg (reference only; not included in website assets).
+Saved result: assets/img/gen-board-angled-light-osb.png
+User request: Lighten the wood to match the reference.
+
+Precise localized material-colour edit for a BTRboard product photo.
+
+INPUT ROLES:
+Image 1 is the EDIT TARGET: angled blue BTRboard panel on black.
+Image 2 is a photograph of the REAL PHYSICAL SAMPLE. Use ONLY its bottom OSB wood layer as the colour reference. Do not copy the hand, desk, keyboard, sample shape, white facer, lighting or foam from Image 2.
+
+CHANGE ONLY THE BOTTOM OSB WOOD BACKING IN IMAGE 1:
+The wood is currently too dark and brown. Lighten it substantially to match the real sample's pale natural blond wood: light straw-beige and creamy tan, with a slightly dry, dusty cut-edge appearance. Lighten both the long left OSB edge and the short front OSB edge. Reduce the dark brown/grey contrast between chips, while retaining enough natural shadow and variation to read as real compressed wood strands. Preserve the detailed wood grain, layered pressed flakes, rough cut surface and exact backing thickness. The result should look like light unfinished OSB, not white paint or bleached smooth plastic. Keep natural directional studio shading, so the front face is slightly shaded but still noticeably lighter than before.
+
+PRESERVE EVERYTHING ELSE:
+Keep Image 1's current pale warm-yellow foam exactly as it is: same colour, fine granular texture, tiny pits, thicker height, continuous shape across both cut edges. Do not alter foam or increase wood thickness. Preserve the blue paper-thin facer, its colour, all BTRboard logos/text/QR-like marks, angle, geometry, panel position, black background, overall lighting and 4:3 landscape framing. Wood belongs only in the bottom backing. No new objects, labels or graphics.

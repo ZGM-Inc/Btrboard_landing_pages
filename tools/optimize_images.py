@@ -11,7 +11,7 @@ JOBS = {
     # Current image sources. Earlier hero candidates remain available for comparison.
     "hero-interior-sunset": [1600, 1376, 980, 700],
     "gen-home-dusk":       [1376, 980, 700],
-    "gen-board-angled":   [1400, 1000, 700],
+    "gen-board-angled-light-osb": [1400, 1000, 700],
     "gen-board-black":    [1376, 980, 700],
     "gen-wall-golden":    [1376, 980, 700],
     "performance-wall-btr": [1678, 1376, 980, 700],
