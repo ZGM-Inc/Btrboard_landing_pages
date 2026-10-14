@@ -158,6 +158,13 @@
 .testimonial--immersive .heading{ font-size:clamp(34px,4.2vw,62px); }
 .testimonial__copy .body{ max-width:48ch; margin-inline:auto; color:var(--btr-grey); }
 .testimonial__copy .testimonial__attribution{ margin-top:clamp(22px,2.4vw,34px); }
+.testimonial__quote blockquote{
+  margin:0; color:var(--accent);
+  font-size:clamp(24px,1.9vw,28px); font-weight:400;
+  line-height:1.2; letter-spacing:-.01em;
+  text-wrap:balance;
+}
+.testimonial__quote .testimonial__attribution{ margin-top:12px; }
 .testimonial__byline{
   display:flex; flex-wrap:wrap; align-items:baseline; justify-content:center;
   column-gap:16px; row-gap:4px;
