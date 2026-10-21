@@ -1,2 +1,40 @@
-slug,first_name,company,province
-riverstone-homes,Michael,Riverstone Homes,Ontario
+slug,first_name,company,province,contact_name,btr_contact,first_drop,website
+heathwood-homes,Hugh,Heathwood Homes,Ontario,Hugh Heron,bob,yes,https://www.heathwood.com/
+reids-heritage-homes,Tim,Reid's Heritage Homes,Ontario,Tim Blevins,bob,yes,https://www.reidsheritagehomes.com/
+ventura-developments,Cliff,Ventura Developments,Manitoba,Cliff Penner,colin,yes,https://www.ventura.mb.ca/developments/
+north-ridge-development,Errol,North Ridge Development,Saskatchewan,Errol Fisher,colin,yes,https://northridge.sk.ca/
+caivan-communities,Frank,Caivan Communities,Ontario,Frank Cairo,bob,yes,https://caivan.com/
+regal-crest-homes,Ranjit,Regal Crest Homes,Ontario,Ranjit Thiara,bob,no,https://www.regalcresthomes.com/
+doug-tarry-homes,Doug,Doug Tarry Homes,Ontario,Doug Tarry,bob,no,https://www.dougtarryhomes.com/
+minto-ottawa,Mark,Minto Ottawa,Ontario,Mark Arnold,bob,no,https://www.minto.com/
+minto-gta,Andrew,Minto GTA,Ontario,Andrew Sjogren,bob,no,https://www.minto.com/
+mattamy-homes,Peter,Mattamy Homes,Ontario,Peter Gilgan,bob,no,https://mattamyhomes.com/?country=CAN
+urbandale-construction,Richard,Urbandale Construction,Ontario,Richard Sachs,bob,no,https://urbandale.com/
+the-conscious-builder,Casey,The Conscious Builder,Ontario,Casey Grey,bob,no,https://www.theconsciousbuilder.com/#/
+branthaven-homes,Steve,Branthaven Homes,Ontario,Steve Stipsits,bob,no,https://www.branthaven.com/
+stratton-homes,Kyle,Stratton Homes,Ontario,Kyle Newman,bob,no,https://strattonhomes.ca/
+crawford-homes,Al,Crawford Homes,Saskatchewan,Al Bashutski,colin,no,https://crawfordhomes.ca/
+sifton-properties,Rick,Sifton Properties,Ontario,Rick Gooyers,bob,no,https://sifton.com/
+richcraft-homes,Steve,Richcraft Homes,Ontario,Steve Grandmont,bob,no,https://www.richcraft.com/
+campanale-homes,Tony,Campanale Homes,Ontario,Tony Campanle,bob,no,https://www.campanale.com/
+dunsire-developments,Shawn,Dunsire Developments,Ontario,Shawn Keeper,bob,no,https://www.dunsire.com/
+cardea-homes,Matteo,Cardea Homes,Ontario,Matteo Golini,bob,no,https://cardeahomes.com/
+fusion-homes,Lee,Fusion Homes,Ontario,Lee Piccoli,bob,no,https://fusionhomes.com/
+tartan-homes-tamarack-homes,Michelle,Tartan Homes & Tamarack Homes,Ontario,Michelle Taggart,bob,no,https://tartanhomes.com/
+activa,John,Activa,Ontario,John Hartwick,bob,no,https://activa.ca/
+fiorante-homes,Rob,Fiorante Homes,Saskatchewan,Rob Fiorante,colin,no,https://fiorantehomes.ca/
+hn-homes,George,HN Homes,Ontario,George Georgaras,bob,no,https://hnhomes.com/
+alair-homes-mississauga,Daniel,Alair Homes Mississauga,Ontario,Daniel Wojcik,bob,no,https://alairhomes.com/mississauga/
+alair-homes-forest-hills,Evelynn,Alair Homes Forest Hills,Ontario,Evelynn Ratcliffe,bob,no,https://alairhomes.com/forest-hill-toronto/
+eq-homes,Josh,eQ Homes,Ontario,Josh Kardish,bob,no,https://eqhomes.ca/
+glenview-homes,Jake,Glenview Homes,Ontario,Jake Shabinsky,bob,no,https://www.glenviewhomes.com/
+providence-homes,Jonathan,Providence Homes,Ontario,Jonathan Hartman,bob,no,https://www.providencehomes.ca/
+oakwood-designers-builders,John,OakWood Designers & Builders,Ontario,John Liptak,bob,no,https://oakwood.ca/
+kingwell-fine-homes,Brett,Kingwell Fine Homes,Ontario,Brett Nodwell,bob,no,https://kingwellhomes.com/
+dueck-builders,Calvin,Dueck Builders,Manitoba,Calvin Dueck,colin,no,https://dueckbuilders.com/
+lucchetta-homes,Robert,Lucchetta Homes,Ontario,Robert Lucchetta,bob,no,https://lucchettahomes.com/
+corvinelli-homes,John,Corvinelli Homes,Ontario,John Corvinelli,bob,no,https://corvinellihomes.ca/
+silvergate-homes,John,Silvergate Homes,Ontario,John Passero,bob,no,https://silvergatehomes.com/prudhommes-landing/
+varsity-homes,Tim,Varsity Homes,Ontario,Tim Schaefer,colin,no,https://varsityhomes.ca/
+profile-custom-homes,Joel,Profile Custom Homes,Ontario,Joel Atkinson,bob,no,https://profilecustomhomes.com/
+maple-leaf-custom-homes,Brian,Maple Leaf Custom Homes,Ontario,Brian Saumure,bob,no,https://mapleleafcustomhomes.ca/

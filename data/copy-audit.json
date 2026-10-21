@@ -38,8 +38,8 @@
     "R-8.75 is the maximum for OSB and RESIST. FIRE-X is rated up to R-7.43. The campaign’s existing up-to wording is retained.",
     "The approved airflow statement is general campaign wording; airtightness depends on assembly and installation. No universal field-performance guarantee was independently established.",
     "Savings copy contains no invented project-specific percentage or dollar value.",
-    "Jay’s testimonial has not been filmed; both play controls remain disabled and say Video coming soon.",
-    "The final Let’s chat CTA now links to Colin Steele’s Microsoft Bookings calendar supplied by the user; its URL is recorded in data/approved-copy.json.",
-    "The CSV contains one sample builder record; personalized contact details have not been independently verified."
+    "Jay’s Interview v4 was supplied by the user on 2026-10-21. Both templates now use the complete interview with audio and a real poster frame; play controls are enabled. Approved surrounding copy is unchanged.",
+    "As of 2026-10-21, the final Let’s chat CTA links to Bob Taylor’s or Colin Steele’s Microsoft Bookings calendar using the user-supplied assignment for each builder. Calendar URLs are recorded centrally in data/booking-contacts.json.",
+    "The campaign CSV contains the 39 builder records supplied by the user on 2026-10-21. Names, provinces and contact assignments are retained as supplied and have not been independently verified. Riverstone remains a separate review sample in data/review-builders.csv."
   ]
 }

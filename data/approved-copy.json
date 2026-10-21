@@ -46,13 +46,14 @@
       "company": "Jayman BUILT",
       "source": "Supplied by the user on 2026-10-07 for the primary page’s proof section; also requested for the second page on 2026-10-14."
     },
-    "asset_status": "Video has not been filmed yet."
+    "asset_status": "User supplied Jayman BUILT - Jay Westman - Interview v4.mp4 on 2026-10-21. Both templates use the full interview with audio and a real frame from the film as the preview.",
+    "video_file": "assets/video/jay-westman-interview-v4-1080p.mp4"
   },
   "calendar": {
     "heading": "Ready to build better?",
     "body": "Let's discuss how BTRboard can work for {Company Name}.",
-    "integration_status": "The final Let’s chat CTA links to Colin Steele’s Microsoft Bookings calendar, supplied by the user.",
-    "booking_url": "https://bookings.cloud.microsoft/bookwithme/user/730223532a2f4f28b09e131ca22ee970@btrboard.com/meetingtype/oIwulFF91UCgh49t3h4aTA2?anonymous&ismsaljsauthenabled&ep=mcard"
+    "integration_status": "The final Let’s chat CTA links to Bob Taylor’s or Colin Steele’s Microsoft Bookings calendar according to each builder’s btr_contact assignment in data/builders.csv. Both calendar URLs were supplied by the user.",
+    "booking_contacts_file": "data/booking-contacts.json"
   },
   "subsequent_user_direction": [
     "Replace the noise selling point with material and labour cost savings. Carry this forward when reconciling the v1 copy.",

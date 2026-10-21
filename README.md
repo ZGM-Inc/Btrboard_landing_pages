@@ -1,7 +1,7 @@
 # BTRboard — ABM landing pages
 
-One template, one row per builder, ~40 static pages. No framework, no npm, no build toolchain
-beyond Python 3 (which ships with macOS).
+One selected template, one row per builder, 39 personalised campaign pages. No framework,
+no npm, no build toolchain beyond Python 3.
 
 ## Build
 
@@ -9,8 +9,17 @@ beyond Python 3 (which ships with macOS).
 python3 build.py
 ```
 
-Reads `template.html` + `data/builders.csv`, writes `dist/<slug>/index.html` for every row and
-copies shared assets to `dist/assets/`. `dist/` is disposable — it is rebuilt from scratch each run.
+Reads `template.html` + `data/builders.csv`, writes `dist/<slug>/index.html` for every campaign
+row using the approved unfinished-beams hero, and copies shared assets to `dist/assets/`.
+Each row's `btr_contact` selects a calendar from `data/booking-contacts.json`.
+
+`data/review-builders.csv` keeps the Riverstone sample separate from the campaign roster.
+Review rows use both `template.html` and `template-b.html`, preserving the two existing review
+URLs. `review-index.html` is copied to `dist/index.html` as part of the build.
+`dist/` is disposable: it is rebuilt from scratch each run.
+
+The build also writes `reports/builder-pages.csv` with the 39 campaign page paths, personalisation,
+first-drop flags and calendar assignments. This review file stays outside the published site.
 
 ## Preview
 
@@ -33,12 +42,36 @@ primary Riverstone Homes page; the alternate remains available at `/riverstone-h
 Append rows to `data/builders.csv` and rebuild:
 
 ```csv
-slug,first_name,company,province
-riverstone-homes,Michael,Riverstone Homes,Ontario
+slug,first_name,company,province,contact_name,btr_contact,first_drop,website
+heathwood-homes,Hugh,Heathwood Homes,Ontario,Hugh Heron,bob,yes,https://www.heathwood.com/
 ```
 
 `slug` becomes the URL segment, so it is what the printed QR code encodes. **Slugs must be final
 before the direct mail goes to print.**
+
+Use `bob` or `colin` in `btr_contact`. The assigned contact determines the booking link, not
+the province. `first_drop` is `yes` or `no`; it is internal roster metadata and does not alter
+the page design. Full contact names and builder websites are also retained as roster metadata.
+
+The supplied roster contains 39 builders: 33 assigned to Bob and 6 to Colin, with 5 first-drop
+builders. Minto Ottawa and Minto GTA have separate pages; Tartan Homes & Tamarack Homes share
+one page, as supplied. Riverstone is an additional review sample, not a campaign recipient.
+
+Missing or unknown contacts, unsafe slugs and duplicate page paths stop the build before the
+existing `dist/` is replaced. No fallback calendar is substituted.
+
+## Calendars and checks
+
+Update Bob Taylor's or Colin Steele's URL once in `data/booking-contacts.json`, then rebuild.
+The hero CTA scrolls to the booking section; the final “Let’s chat” button opens that builder's
+assigned Microsoft Bookings calendar. Python runs only during the build, not when someone
+visits a page.
+
+Run the generator's routing and validation checks with:
+
+```bash
+python3 -B -m unittest discover -s tests -v
+```
 
 ## Copy
 
@@ -107,10 +140,12 @@ floor texture, interior geometry and printed boards fixed. This is a constructed
 not recorded jobsite footage. The previous 12-second `hero-interior-sunset.mp4` is retained
 for comparison; switching the template's video `data-src` back restores it.
 
-`assets/js/hero-video.js` keeps the still visible until playback starts, exposes a pause/play
-control, and pauses the video when the hero is offscreen or the tab is hidden. Reduced-motion,
-Save-Data, and reported 2G connections use the still without loading the MP4. If autoplay is
-blocked, a Play control appears over the still; media errors keep the still visible.
+`assets/js/hero-video.js` keeps the still visible until playback starts and pauses the video
+when the hero is offscreen or the tab is hidden. The selected unfinished-beams design has no
+visible pause/play button, as requested; the alternate winter review retains its control.
+Reduced-motion, Save-Data, and reported 2G connections use the still without loading the MP4.
+If autoplay is blocked or playback fails, the still remains visible. The alternate design
+can also offer its Play control when autoplay is blocked.
 
 To regenerate the video on an Apple Silicon Mac with Xcode Command Line Tools, follow the
 compile/render commands at the top of `tools/render_hero_video.swift`. Choose a new output name
@@ -151,13 +186,29 @@ until another click, an outside click, or Escape. Keyboard users can Tab to each
 and press Enter or Space. The insulation note sits over the upper blue facer, including
 on small screens; the other notes use a bottom caption on small screens.
 
-The primary page's testimonial section has a contained 16:9 video area alongside Jay's attribution, with
-no blue-wall background, portrait or poster image. Set the video's empty `data-src` in
-`template.html` to Jay's final video file when available. Until then, the play control shows
-"Video coming soon" and stays disabled; no stand-in footage is loaded. The alternate
-`template-b.html` retains its existing presentation.
+The primary page's testimonial section has a contained 16:9 video area alongside Jay's attribution.
+Both templates now play the supplied **Jayman BUILT - Jay Westman - Interview v4.mp4**, with a real
+frame from the interview replacing the temporary image. The full 3:38 edit and audio are retained.
+`assets/video/jay-westman-interview-v4-1080p.mp4` is the shared 1080p H.264/AAC web copy (about 82 MB),
+exported from the 4K original with fast-start enabled. The original stays outside the repository.
 
-- Jay Westman testimonial video — final asset pending
-- Calendar/scheduling tool — placeholder block in the booking section
-- Real builder data — `riverstone-homes` is a stand-in
+The responsive JPEG posters in `assets/img/opt/jay-westman-interview-v4-title-*` use the opening
+title shot matching the user's selected still, showing Jay's name and role. `proof-video.js`
+attaches the video source only after pressing “Watch the film”, shows a
+loading message, then hands playback to native controls with sound. The alternate design hides
+its overlaid text during playback. Escape or the end of the film restores the preview, and
+scrolling away pauses playback. All campaign pages share one video file.
+
+To prepare a fresh copy on macOS, use an empty output directory, inspect the result, then copy
+its `video/` and `img/opt/` files into `assets/`:
+
+```bash
+swift -module-cache-path /tmp/btr-swift-cache tools/prepare_testimonial.swift \
+  '/path/to/Jayman BUILT - Jay Westman - Interview v4.mp4' /tmp/btr-testimonial-assets
+```
+
+The script limits the web export size and extracts the selected title shot. Add `--poster-only`
+to refresh the stills without re-encoding the film. The normal Python
+build copies the prepared files and requires no Swift or video processing tools.
+
 - Hosting domain, which determines the slug URLs printed on the DM

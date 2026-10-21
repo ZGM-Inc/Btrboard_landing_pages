@@ -23,11 +23,14 @@
   button.setAttribute('aria-label', 'Play the testimonial film');
 
   var started = false;
+  var loading = false;
   var playAttempt = 0;
   var failed = false;
   var initialTabindex = video.getAttribute('tabindex');
 
   function showOverlay() {
+    loading = false;
+    button.removeAttribute('aria-busy');
     section.classList.remove('is-playing');
     video.removeAttribute('controls');
     if (initialTabindex === null) video.removeAttribute('tabindex');
@@ -88,11 +91,14 @@
   }
 
   button.addEventListener('click', function () {
-    if (failed) return;
+    if (failed || loading) return;
     if (!started) {
       video.src = source;
       started = true;
     }
+    loading = true;
+    button.setAttribute('aria-busy', 'true');
+    if (text) text.textContent = 'Loading the film…';
     var thisAttempt = ++playAttempt;
     function rejected() {
       if (!failed && thisAttempt === playAttempt) softFail();
@@ -105,6 +111,8 @@
 
   video.addEventListener('playing', function () {
     if (failed) return;
+    loading = false;
+    button.removeAttribute('aria-busy');
     var transferFocus = document.activeElement === button ||
       (overlay && overlay.contains(document.activeElement));
     // Hand over to native controls once it is running — that is where people

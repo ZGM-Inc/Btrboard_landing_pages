@@ -36,10 +36,6 @@
     <h1 class="display rise rise--2">{{first_name}},<br>Introducing a better way to build in {{province}}.</h1>
     <p class="hero__cta rise rise--4"><a class="btn btn--primary" href="#book">Let&rsquo;s chat</a></p>
   </div>
-  <button class="hero__motion" type="button" hidden aria-label="Pause background video">
-    <span class="hero__motion-icon" aria-hidden="true"></span>
-    <span class="hero__motion-label">Pause motion</span>
-  </button>
 </header>
 
 <main>
@@ -194,22 +190,14 @@
       </figure>
     </div>
     <div class="testimonial__media" data-testimonial-player>
-      <!-- PLACEHOLDER IMAGE. This is a generated stock-style still, NOT Jay
-           Westman. It is here only so the layout can be judged with a face in
-           it. Remove it and attach Jay's real video before this goes anywhere. -->
-      <picture>
-        <source type="image/avif" srcset="../assets/img/opt/placeholder-testimonial-700.avif 700w, ../assets/img/opt/placeholder-testimonial-980.avif 980w, ../assets/img/opt/placeholder-testimonial-1376.avif 1376w" sizes="(min-width:960px) 58vw, 94vw">
-        <source type="image/webp" srcset="../assets/img/opt/placeholder-testimonial-700.webp 700w, ../assets/img/opt/placeholder-testimonial-980.webp 980w, ../assets/img/opt/placeholder-testimonial-1376.webp 1376w" sizes="(min-width:960px) 58vw, 94vw">
-        <img class="testimonial__poster" src="../assets/img/opt/placeholder-testimonial-1376.webp" alt="Placeholder image standing in for the testimonial video. Not a photograph of Jay Westman." width="1376" height="768" loading="lazy" decoding="async">
-      </picture>
-      <video class="proof__video" data-src="" preload="none" playsinline aria-label="Jay Westman video testimonial"></video>
-      <button class="proof__play testimonial__play" type="button" disabled aria-label="Jay Westman video testimonial coming soon">
+      <img class="testimonial__poster" src="../assets/img/opt/jay-westman-interview-v4-title-1280.jpg" srcset="../assets/img/opt/jay-westman-interview-v4-title-700.jpg 700w, ../assets/img/opt/jay-westman-interview-v4-title-1280.jpg 1280w, ../assets/img/opt/jay-westman-interview-v4-title-1920.jpg 1920w" sizes="(min-width:960px) 58vw, 94vw" alt="Jay Westman seated beside a fireplace. On-screen title: Jay Westman, Chairman &amp; CEO, Jayman BUILT." width="1920" height="1080" loading="lazy" decoding="async">
+      <video class="proof__video" data-src="../assets/video/jay-westman-interview-v4-1080p.mp4" preload="none" playsinline aria-label="Jay Westman video testimonial"></video>
+      <button class="proof__play testimonial__play" type="button" aria-label="Play Jay Westman’s testimonial film">
         <span class="proof__play-ring" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 3.5v17l15-8.5-15-8.5z" fill="currentColor"/></svg>
         </span>
-        <span class="proof__play-text">Video coming soon</span>
+        <span class="proof__play-text">Watch the film</span>
       </button>
-      <p class="testimonial__flag">Placeholder: not Jay Westman</p>
     </div>
   </div>
 </section>
@@ -223,7 +211,7 @@
       <h2 class="heading" id="book-h">Ready to<br>build better?</h2>
       <p class="lead">Let&rsquo;s discuss how BTRboard can work for <span class="nobr">{{company}}</span>.</p>
     </div>
-    <p class="booking__cta"><a class="btn btn--primary btn--booking" href="https://bookings.cloud.microsoft/bookwithme/user/730223532a2f4f28b09e131ca22ee970@btrboard.com/meetingtype/oIwulFF91UCgh49t3h4aTA2?anonymous&amp;ismsaljsauthenabled&amp;ep=mcard">Let&rsquo;s chat <span aria-hidden="true">&rarr;</span></a></p>
+    <p class="booking__cta"><a class="btn btn--primary btn--booking" href="{{booking_url}}">Let&rsquo;s chat <span aria-hidden="true">&rarr;</span></a></p>
     <!-- Reserved for a future embedded calendar. -->
     <div class="booking__slot" hidden></div>
     </div>

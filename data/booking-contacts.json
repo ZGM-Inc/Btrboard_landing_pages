@@ -1,0 +1,10 @@
+{
+  "bob": {
+    "name": "Bob Taylor",
+    "booking_url": "https://bookings.cloud.microsoft/bookwithme/user/234e5ab294fb44a69edd1c27d0626160@btrboard.com?anonymous&ismsaljsauthenabled&ep=pcard"
+  },
+  "colin": {
+    "name": "Colin Steele",
+    "booking_url": "https://bookings.cloud.microsoft/bookwithme/user/730223532a2f4f28b09e131ca22ee970@btrboard.com/meetingtype/oIwulFF91UCgh49t3h4aTA2?anonymous&ismsaljsauthenabled&ep=mcard"
+  }
+}

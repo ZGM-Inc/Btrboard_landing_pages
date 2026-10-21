@@ -10,10 +10,10 @@
 <link rel="preload" href="../assets/fonts/source-sans-pro-bold-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="../assets/css/btr.css?v=1791905086">
 <link rel="stylesheet" href="../assets/css/btr-b.css?v=1792003798">
-<script src="../assets/js/hero-video.js?v=1791317491" defer></script>
+<script src="../assets/js/hero-video.js?v=1792530499" defer></script>
 <script src="../assets/js/layer-explorer.js?v=1791405860" defer></script>
 <script src="../assets/js/text-enter.js?v=1791492463" defer></script>
-<script src="../assets/js/proof-video.js?v=1791394490" defer></script>
+<script src="../assets/js/proof-video.js?v=1792611145" defer></script>
 </head>
 <body>
 
@@ -178,13 +178,10 @@
 
 <!-- ======================== PROOF + TESTIMONIAL ===================== -->
 <section class="testimonial testimonial--immersive" id="film" aria-labelledby="builders" data-testimonial-player>
-  <!-- Temporary layout still, not Jay Westman. Replace with the real film poster. -->
-  <picture class="testimonial__backdrop" aria-hidden="true">
-    <source type="image/avif" srcset="../assets/img/opt/placeholder-testimonial-700.avif 700w, ../assets/img/opt/placeholder-testimonial-980.avif 980w, ../assets/img/opt/placeholder-testimonial-1376.avif 1376w" sizes="100vw">
-    <source type="image/webp" srcset="../assets/img/opt/placeholder-testimonial-700.webp 700w, ../assets/img/opt/placeholder-testimonial-980.webp 980w, ../assets/img/opt/placeholder-testimonial-1376.webp 1376w" sizes="100vw">
-    <img class="testimonial__poster" src="../assets/img/opt/placeholder-testimonial-1376.webp" alt="" width="1376" height="768" loading="lazy" decoding="async">
-  </picture>
-  <video class="proof__video" data-src="" preload="none" playsinline tabindex="-1" aria-label="Jay Westman video testimonial"></video>
+  <div class="testimonial__backdrop" aria-hidden="true">
+    <img class="testimonial__poster" src="../assets/img/opt/jay-westman-interview-v4-title-1920.jpg" srcset="../assets/img/opt/jay-westman-interview-v4-title-700.jpg 700w, ../assets/img/opt/jay-westman-interview-v4-title-1280.jpg 1280w, ../assets/img/opt/jay-westman-interview-v4-title-1920.jpg 1920w" sizes="100vw" alt="" width="1920" height="1080" loading="lazy" decoding="async">
+  </div>
+  <video class="proof__video" data-src="../assets/video/jay-westman-interview-v4-1080p.mp4" preload="none" playsinline tabindex="-1" aria-label="Jay Westman video testimonial"></video>
   <div class="testimonial__scrim" aria-hidden="true"></div>
   <div class="shell testimonial__overlay" data-testimonial-overlay>
     <div class="testimonial__copy opener" data-enter>
@@ -202,11 +199,11 @@
       </figure>
     </div>
     <p class="testimonial__cta">
-      <button class="proof__play testimonial__watch" type="button" disabled aria-label="Jay Westman video testimonial coming soon">
+      <button class="proof__play testimonial__watch" type="button" aria-label="Play Jay Westman’s testimonial film">
         <span class="proof__play-ring" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 3.5v17l15-8.5-15-8.5z" fill="currentColor"/></svg>
         </span>
-        <span class="proof__play-text">Video coming soon</span>
+        <span class="proof__play-text">Watch the film</span>
       </button>
     </p>
   </div>

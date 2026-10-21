@@ -2,9 +2,9 @@
 (function () {
   var video = document.querySelector('.hero__video');
   var button = document.querySelector('.hero__motion');
-  if (!video || !button) return;
+  if (!video) return;
 
-  var label = button.querySelector('.hero__motion-label');
+  var label = button && button.querySelector('.hero__motion-label');
   var reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
   var connection = navigator.connection;
   var userPaused = false;
@@ -17,17 +17,18 @@
   }
 
   function updateButton() {
+    if (!button) return;
     var paused = video.paused;
     button.classList.toggle('is-paused', paused);
     button.setAttribute('aria-label', paused ? 'Play background video' : 'Pause background video');
-    label.textContent = paused ? 'Play motion' : 'Pause motion';
+    if (label) label.textContent = paused ? 'Play motion' : 'Pause motion';
   }
 
   function syncPlayback() {
     if (!allowed()) {
       video.pause();
       video.classList.remove('is-ready');
-      button.hidden = true;
+      if (button) button.hidden = true;
       if (video.hasAttribute('src')) {
         video.removeAttribute('src');
         video.load();
@@ -36,7 +37,7 @@
     }
     if (!failed && userPaused) {
       // Restore the manual play option when motion/data preferences change back.
-      button.hidden = false;
+      if (button) button.hidden = false;
       video.pause();
       updateButton();
       return;
@@ -54,7 +55,7 @@
         if (error.name === 'AbortError') return;
         if (!allowed() || failed || document.hidden || !inView) return;
         userPaused = true;
-        button.hidden = false;
+        if (button) button.hidden = false;
         updateButton();
       });
     }
@@ -63,17 +64,17 @@
   video.addEventListener('playing', function () {
     if (!allowed()) { syncPlayback(); return; }
     video.classList.add('is-ready');
-    button.hidden = false;
+    if (button) button.hidden = false;
     updateButton();
   });
   video.addEventListener('pause', updateButton);
   video.addEventListener('error', function () {
     failed = true;
     video.classList.remove('is-ready');
-    button.hidden = true;
+    if (button) button.hidden = true;
   });
 
-  button.addEventListener('click', function () {
+  if (button) button.addEventListener('click', function () {
     userPaused = !video.paused;
     syncPlayback();
     updateButton();
