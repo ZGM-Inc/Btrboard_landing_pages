@@ -1,6 +1,6 @@
 # BTRboard — ABM landing pages
 
-One selected template, one row per builder, 39 personalised campaign pages. No framework,
+One selected template, one row per builder, 40 personalised campaign pages. No framework,
 no npm, no build toolchain beyond Python 3.
 
 ## Build
@@ -18,7 +18,7 @@ Review rows use both `template.html` and `template-b.html`, preserving the two e
 URLs. `review-index.html` is copied to `dist/index.html` as part of the build.
 `dist/` is disposable: it is rebuilt from scratch each run.
 
-The build also writes `reports/builder-pages.csv` with the 39 campaign page paths, personalisation,
+The build also writes `reports/builder-pages.csv` with the 40 campaign page paths, personalisation,
 first-drop flags and calendar assignments. This review file stays outside the published site.
 
 ## Preview
@@ -53,7 +53,7 @@ Use `bob` or `colin` in `btr_contact`. The assigned contact determines the booki
 the province. `first_drop` is `yes` or `no`; it is internal roster metadata and does not alter
 the page design. Full contact names and builder websites are also retained as roster metadata.
 
-The supplied roster contains 39 builders: 33 assigned to Bob and 6 to Colin, with 5 first-drop
+The supplied roster contains 40 builders: 33 assigned to Bob and 7 to Colin, with 5 first-drop
 builders. Minto Ottawa and Minto GTA have separate pages; Tartan Homes & Tamarack Homes share
 one page, as supplied. Riverstone is an additional review sample, not a campaign recipient.
 
