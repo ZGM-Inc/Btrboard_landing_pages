@@ -113,12 +113,14 @@ def plan_pages(campaign: list, review: list, templates: list) -> list:
 def write_report(rows: list) -> None:
     REPORT.parent.mkdir(exist_ok=True)
     fields = ["company", "contact_name", "first_name", "province", "btr_contact",
-              "booking_contact_name", "first_drop", "page_path", "booking_url"]
+              "booking_contact_name", "first_drop", "page_path", "booking_url",
+              "landing_page_url"]
     with REPORT.open("w", newline="", encoding="utf-8") as fh:
         writer = csv.DictWriter(fh, fieldnames=fields, extrasaction="ignore", lineterminator="\n")
         writer.writeheader()
         for row in rows:
-            writer.writerow({**row, "page_path": f"{row['slug']}/"})
+            writer.writerow({**row, "page_path": f"{row['slug']}/",
+                             "landing_page_url": f"https://getbtrboard.ca/{row['slug']}/"})
 
 
 def main() -> None:
