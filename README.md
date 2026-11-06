@@ -49,11 +49,11 @@ heathwood-homes,Hugh,Heathwood Homes,Ontario,Hugh Heron,bob,yes,https://www.heat
 `slug` becomes the URL segment, so it is what the printed QR code encodes. **Slugs must be final
 before the direct mail goes to print.**
 
-Use `bob` or `colin` in `btr_contact`. The assigned contact determines the booking link, not
+Use `bob` or `daryl` in `btr_contact` for campaign pages. The assigned contact determines the booking link, not
 the province. `first_drop` is `yes` or `no`; it is internal roster metadata and does not alter
 the page design. Full contact names and builder websites are also retained as roster metadata.
 
-The supplied roster contains 40 builders: 33 assigned to Bob and 7 to Colin, with 5 first-drop
+The supplied roster contains 40 builders: 33 assigned to Bob and 7 to Daryl, with 5 first-drop
 builders. Minto Ottawa and Minto GTA have separate pages; Tartan Homes & Tamarack Homes share
 one page, as supplied. Riverstone is an additional review sample, not a campaign recipient.
 
@@ -62,7 +62,8 @@ existing `dist/` is replaced. No fallback calendar is substituted.
 
 ## Calendars and checks
 
-Update Bob Taylor's or Colin Steele's URL once in `data/booking-contacts.json`, then rebuild.
+Update Bob Taylor's or Daryl's URL once in `data/booking-contacts.json`, then rebuild.
+The legacy `colin` entry is retained for the Riverstone review samples.
 The hero CTA scrolls to the booking section; the final “Let’s chat” button opens that builder's
 assigned Microsoft Bookings calendar. Python runs only during the build, not when someone
 visits a page.
